@@ -46,6 +46,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 }
 
 /* <!-- Header start --> */
+
 .header-block {
     display: flex;
     justify-content: space-between;
@@ -90,8 +91,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     background-image: url('../img/section.svg');
     background-repeat: no-repeat;
     background-position: center 1.3em;
-    /* position: absolute; */
-    /* border-image: url('../img/section.svg'); */
 }
 
 .nav__link:hover{
@@ -111,15 +110,20 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 .icons__item:last-child {
     padding: 0px;
 }
+
 /* <!-- Header end --> */
 
 /* <!-- Conteiner start --> */
+
 .conteiner {
     display: flex;
     width: 1366px;
+    /* height: 553px; */
     margin: 0 auto;
     padding: 80px 0;
 }
+
+/* <!-- siderbar-wrapper start --> */
 
 .siderbar-wrapper {
     background: #151413;
@@ -127,7 +131,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
-    width: 22%;
+    width: 28%;
 }
 
 /* .siderbar {
@@ -144,12 +148,12 @@ margin: 30px 0 0 50px;
 }
 
 .siderbar__block {
-    padding: 30px 0 25px 50px;
-    border-bottom: 1px solid gray;
+    padding: 15px 0 15px 50px;
+    border-bottom: 1px solid rgb(63, 63, 63);
 }
 
 .siderbar__list-item {
-    line-height: 50px;
+    line-height: 35px;
 }
 
 .siderbar__link {
@@ -171,6 +175,74 @@ margin: 30px 0 0 50px;
 .social__item {
     margin-right: 25px;
 }
+
+/* <!-- siderbar-wrapper end --> */
+
+/* <!-- content__wrapper start --> */
+
+.content {
+    background: white;
+    font-family: 'Nunito';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    width: 88%;
+}
+
+.content__wrapper {
+    margin: 45px 0 100px 50px;
+}
+
+.content__nav {
+    margin-bottom: 20px;
+}
+
+.content__nav-list {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.content__nav-item {
+    margin: 0 15px 0 0;
+}
+
+.content__nav-item::after {
+    content: '\003E';
+    /* background-image: url(../img/arrow.svg); */
+    /* position: relative;
+    right: 0px; */
+}
+
+.content__nav-item:last-child {
+    content: '';
+    opacity: 0.6;
+}
+
+.content__nav-link {
+    color: #151413;
+}
+
+.content__banner {
+    background-image: url('../img/photo.png');
+    width: 900px;
+    height: 365px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.content__banner-text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #151413;
+    margin: 5px auto;
+    background-color: #DC5B34;
+    padding: 5px 20px;
+}
+
+/* <!-- content__wrapper end --> */
 
 /* <!-- Conteiner end --> */
 
